@@ -1,9 +1,7 @@
 """Learn how the network's reading of PHOTOS is off, from the hand-made reference characters.
 
-For every reference person (photo folder + the DNA you made by hand) it reads the photos with the trained
-network, compares with your DNA, and learns one fixed correction per slider. Every number it reports is
-leave-one-out: each person is corrected using only the OTHER people, so the scores show what happens on
-someone the correction has never seen.
+For every reference person it reads the photos with the trained network, compares with your DNA, and learns one fixed correction per slider. Every number it reports is
+leave-one-out: each person is corrected using only the OTHER people, so the scores show what happens on someone the correction has never seen.
 
     python calibrate_refs.py
 
@@ -86,7 +84,7 @@ def find_pairs(root, sex="female"):
 
 
 def dna_targets(text, tg):
-    """Hand-made DNA -> the same 0-1 targets the network predicts (NaN where it can't be compared)."""
+    """DNA -> the same 0-1 targets the network predicts (NaN where it can't be compared)."""
     genes, cols = tr.parse(text)
     G = len(tg.genes)
     v, cls = np.full(G, np.nan), {}
