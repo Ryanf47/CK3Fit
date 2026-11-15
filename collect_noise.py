@@ -4,7 +4,7 @@ Two kinds of face, mixed:
   WIDE (20%): every ordinary face slider set anywhere in 0-255 (the 'extra' sliders on 30% of them), every
       discrete face option (eyebrows, complexion, face details, wrinkles) random, colours random.
       These make sure every slider value and every option is seen. Many look odd; that's the point.
-  ANCHORED (80%): start from the sex's template or a human-made reference DNA (from refs.csv, minus a held-out set,
+  ANCHORED (80%): start from the sex's template or a reference DNA (from refs.csv, minus a held-out set,
       by default the characters in exam\\); move 15-35 ordinary sliders by amounts matched to how much the
       references vary (strength 0.5x-1.2x); 'extra' sliders (ones at least 60% of references leave at the
       template value: swollen nose, flared nostrils, lips forward ...) move only 8% of the time; discrete options
@@ -12,7 +12,7 @@ Two kinds of face, mixed:
   Both kinds: face decals, head fat, skin and eye colour saturation, eyelashes and eye type re-rolled (always on
       wide faces, 60% on anchored), with strengths kept inside the range the game's own Randomize faces use.
       Age-related settings are left alone (every Ruler Designer character is 25).
-Extra starting faces: put DNAs from Randomize (one per ethnicity) as .txt files in anchors_female\\ or
+Extra starting faces: put DNAs from Randomize as .txt files in anchors_female\\ or
 anchors_male\\. Starting faces: template 5%, same-sex human-made references 20%, these Randomize faces 75%.
 Anchored faces also get 0-6 ordinary sliders set anywhere in 0-255, so every slider reaches its ends on
 otherwise natural faces, not only on the wide ones. They add
