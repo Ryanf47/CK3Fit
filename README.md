@@ -25,6 +25,7 @@ WHAT'S INSIDE / LICENCES
 - DINOv2 (Meta) - Apache 2.0.
 - MediaPipe face landmarker (Google) - Apache 2.0.
 - PyTorch, transformers, NumPy, OpenCV and the other libraries - their own open-source licences.
+- CLIP ViT-L/14 (OpenAI) - MIT. Downloaded on first run.
 - InsightFace face-recognition models (buffalo_l, antelopev2) - provided by InsightFace for non-commercial
   research use only. They are not included; the app downloads them from InsightFace on first run.
   Because of this, CK3Fit as a whole is for personal, non-commercial use only.
