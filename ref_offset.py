@@ -1,5 +1,5 @@
 """Reference correction on the FINAL face: learns how the whole pipeline's result is off, from the reference people
-(photo folder + a hand-made DNA), and fixes it with one shift per slider.
+and fixes it with one shift per slider.
 
 For each reference person it runs the normal pipeline on the photos (exactly what makes <person>_final.txt) and
 compares with the hand-made DNA. The shift per slider is the average difference, scaled by a strength chosen by
